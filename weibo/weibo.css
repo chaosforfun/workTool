@@ -1,0 +1,15 @@
+div [ad-data],/*右侧广告*/
+div [feedtype=ad],/*微博中的广告*/
+div [node-type=feed_spread]/*微博中的推荐*/
+,div [node-type=friends] /*xxx关注了xxx*/ {
+	display: none !important
+}
+
+#v6_pl_rightmod_rank,
+#v6_trustPagelet_recom_member,
+#v6_pl_rightmod_recominfo > div {
+	display: none;
+}
+#v6_pl_rightmod_recominfo div:first-child {
+	display: block;
+}

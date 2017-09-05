@@ -15,4 +15,4 @@
 
 ## 改进意见
 
-改进和bug请提到[gitlab的Issue](https://gitlab.yeshj.com/ebase/ebase-web/issues)里
+改进和bug请提到[gitlab的Issue](https://gitlab.yeshj.com/ebase/chrome-extension/issues)里

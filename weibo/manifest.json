@@ -11,7 +11,7 @@
 		"default_icon": "icon.png"
 	},
 	"content_scripts" : [{
-		"matches": ["http://weibo.com/*"],
+		"matches": ["http://weibo.com/*", "https://weibo.com/*"],
 		"css": ["weibo.css"],
 		"js": ["weibo.js"]	
 	}]

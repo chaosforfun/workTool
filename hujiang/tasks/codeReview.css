@@ -1,0 +1,13 @@
+.zsc {
+  position: fixed;
+  height: 800px;
+  width: 70%;
+  z-index: 1000;
+  background: tan;
+  overflow: auto;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}

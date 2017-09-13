@@ -24,7 +24,7 @@ function isReviewed() {
     let username = user.children[1].innerText
     // check current user's status
     if (username == currentUser) {
-      isReviewed = user.children[0].classList.contains('green')
+      isReviewed = !user.children[0].classList.contains('orange')
     }
   })
   return isReviewed

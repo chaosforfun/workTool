@@ -1,12 +1,30 @@
 let isReviewPage = location.href.match(/phab-by\.intra\.yeshj\.com\/r\w+/)
 if (isReviewPage && isReviewed()) {
-  let audit = document.createElement('div')
-  audit.className = 'zsc'
+  let extentionWrapper = document.createElement('div')
+  extentionWrapper.className = 'zsc'
+  let contentTemplate = `
+    <div class="container">
+      <div class="header">
+        <span>还有</span><span id="zscCount"></span>个,加油!!!
+        <button id="zscClose">关闭</button>
+      </div>
+      <div class='content'>
+        {{value}}
+      </div>
+    </div>
+  `
+  let render = template.compile(contentTemplate, { escape: false })
   Ajax('GET', '/audit')
     .then(html => {
       let bodyReg = /<ul class="phui-oi-list-view ">.*<\/ul>/
-      audit.innerHTML = bodyReg.exec(html)[0]
-      document.body.appendChild(audit)
+      let value = bodyReg.exec(html)[0]
+      extentionWrapper.innerHTML = render({value})
+      document.body.appendChild(extentionWrapper)
+      let count = extentionWrapper.querySelector('ul').children.length
+      extentionWrapper.querySelector('#zscCount').innerText = count
+      extentionWrapper.querySelector('#zscClose').addEventListener('click', function(e) {
+        extentionWrapper.classList.add('closed')
+      })
     })
 }
 

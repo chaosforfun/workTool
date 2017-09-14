@@ -14,7 +14,7 @@
     "js": ["tasks/cr.js"]
   },{
     "matches": ["http://phab-by.intra.yeshj.com/*"],
-    "js": ["tasks/phab.js"],
+    "js": ["libs/artTemplate.js", "tasks/phab.js"],
     "css": ["tasks/codeReview.css"]
   }],
   "permissions": [

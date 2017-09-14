@@ -1,8 +1,19 @@
 .zsc {
   position: fixed;
-  height: 800px;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;  
+}
+.zsc.closed {
+  display: none
+}
+.container {
+  position: fixed;
+  height: 600px;
   width: 70%;
-  z-index: 1000;
   background: tan;
   overflow: auto;
   margin: auto;
@@ -10,4 +21,17 @@
   right: 0;
   top: 0;
   bottom: 0;
+}
+.zsc .header {
+  line-height: 40px;
+  padding: 1em;
+  background-color: darkgoldenrod;
+}
+.zsc #zscClose {
+  float: right;
+  margin-top: 6px;
+}
+.zsc .content {
+  height: calc(100% - 66px);
+  overflow: auto;
 }

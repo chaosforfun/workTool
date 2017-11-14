@@ -1,23 +1,44 @@
 {
   "manifest_version": 2,
-
   "name": "hujiang shells",
   "description": "类似自动脚本,自动完成一些琐碎工作",
   "version": "1.1",
-
   "browser_action": {
     "default_icon": "logo.png",
     "default_popup": "popup.html"
   },
-  "content_scripts": [{
-    "matches": ["http://cr.yeshj.com/*"],
-    "js": ["tasks/cr.js"]
-  },{
-    "matches": ["http://phab-by.intra.yeshj.com/*"],
-    "js": ["libs/artTemplate.js", "tasks/phab.js"],
-    "css": ["tasks/codeReview.css"]
-  }],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://cr.yeshj.com/*"
+      ],
+      "js": [
+        "tasks/cr.js"
+      ]
+    },
+    {
+      "matches": [
+        "http://phab-by.intra.yeshj.com/*"
+      ],
+      "js": [
+        "libs/artTemplate.js",
+        "tasks/phab.js"
+      ],
+      "css": [
+        "tasks/codeReview.css"
+      ]
+    },
+    {
+      "matches": [
+        "http://ci-base.yeshj.com/*"
+      ],
+      "js": [
+        "tasks/ci.js"
+      ]
+    }
+  ],
   "permissions": [
+    "notifications",
     "activeTab",
     "https://ajax.googleapis.com/"
   ]

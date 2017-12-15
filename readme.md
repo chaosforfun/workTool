@@ -1,5 +1,6 @@
 # chrome 扩展，常用工具
 
+目前有以下插件
 ### hujiang
 
 自动化工作中遇到的一些常见场景
@@ -16,22 +17,17 @@
 0. 拉取代码
 1. 打开chrome扩展程序管理页 `chrome://extensions/`
 2. 勾选右上角的 **开发者模式**
-3. 点击 **加载已经解压的扩展程序** ,选择要用的扩展的目录就可以了
+3. 点击 **加载已经解压的扩展程序** ,选择要用的插件的目录就可以了
+4. ↓↓↓ 
 
-## 各目录对应的插件
+## 注意!!! 一个目录对应一个插件
 
-    hujiang
-      自动关闭cr已完成的review
-      phab添加需要review的列表
-      ci构建完成后通知
-    weibo
-      过滤微博广告
 
 ## 改进意见
 
 改进和bug请提到[gitlab的Issue](https://gitlab.yeshj.com/ebase/chrome-extension/issues)里,
 另外提需求前你好意思不扫个码么
 
-## 各位大神,插件用的爽的话打赏个键盘钱吧,为了这些插件我敲坏了300个键盘了.
+## 打赏
 
 ![微信](https://gitlab.yeshj.com/ebase/chrome-extension/raw/master/QRCode.png)

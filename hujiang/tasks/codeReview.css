@@ -27,6 +27,15 @@
   padding: 1em;
   background-color: darkgoldenrod;
 }
+.zsc .authors {
+  display: inline-block
+}
+.zsc ul li {
+  display: inline-block;
+  margin-left: 2rem;
+  color: #136CB2;
+  cursor: pointer;
+}
 .zsc #zscClose {
   float: right;
   margin-top: 6px;

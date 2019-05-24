@@ -1,13 +1,5 @@
 # chrome 扩展，常用工具
 
-目前有以下插件
-### hujiang
-
-自动化工作中遇到的一些常见场景
-目前功能包括
-1. 自动关闭cr 的已完成review
-2. 在phabicator的review界面添加to review list
-
 ### weibo
 
 屏蔽微博广告的

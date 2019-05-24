@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "work shells",
+  "description": "类似自动脚本,自动完成一些琐碎工作",
+  "version": "1.1",
+  "browser_action": {
+    "default_icon": "tx.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "notifications",
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
